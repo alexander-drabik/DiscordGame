@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("dev.kord:kord-core:0.8.0-M16")
+    implementation("ch.qos.logback:logback-classic:1.4.4")
 }
 
 tasks.test {

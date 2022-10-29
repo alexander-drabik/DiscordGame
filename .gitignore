@@ -4,3 +4,4 @@ build/
 src/test/
 gradlew.bat/
 gradlew/
+main/resources/token
