@@ -1,17 +1,11 @@
-object Level {
-    const val size = 5
+open class Level {
+    open var size = 0
 
-    var layout = mutableListOf(
-        0, 0, 0, 0, 0,
-        0, 0, 0, 4, 0,
-        0, 0, 0, 0, 0,
-        0, 1, 0, 2, 0,
-        0, 0, 0, 0, 0
-    )
+    open var layout: MutableList<Int> = mutableListOf()
 
     fun generateMessage(): String {
         var level = ""
-        for ((index, pole) in Level.layout.withIndex()) {
+        for ((index, pole) in layout.withIndex()) {
             if (index%5 == 0) {
                 level += '\n'
             }
